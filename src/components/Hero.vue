@@ -5,7 +5,7 @@
         <div class="justify-content-center align-self-center">
           <h2><strong>Deliciuous Food Menu,</strong><br />In Your Gedget</h2>
           <p>Ayo segera pilih dan pesan makanan favorit anda </p>
-            <router-link class="btn btn-lg btn-sucsess" to="/menu">Menu</router-link>
+            <router-link class="btn btn-lg btn-success" to="/menu">Menu</router-link>
         </div>
       </div>
     </div>
