@@ -1,7 +1,7 @@
 <template>
     <div>
 <Navbar />
-<h2>MENUUUUUU FADELI</h2>
+<h2>DISINI ADA MENU</h2>
     </div>
 </template>
 
