@@ -5,7 +5,7 @@
       <h2><strong>MENU PENYETAN</strong></h2>
     </div>
     <br />
-    <b-container>
+    <div class="container">
       <div>
         <b-card-group deck>
           <b-card
@@ -51,7 +51,7 @@
           </b-card>
         </b-card-group>
       </div>
-    </b-container>
+    </div>
   </div>
 </template>
 
