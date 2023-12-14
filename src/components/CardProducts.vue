@@ -1,5 +1,5 @@
 <template>
-  <h2>Card Product {{ product.nama }}</h2>
+  <h2>Card Product {{ products.nama }}</h2>
   <!-- <div class="container">
   <div>
     <b-card-group deck>
@@ -49,7 +49,7 @@
 <script>
 export default {
  name : 'CardProducts',
- props : ['product']
+ props : ['products']
 }
 </script>
 
