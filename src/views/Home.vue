@@ -52,12 +52,8 @@ export default {
   mounted() {
     axios
       .get("https://my-json-server.typicode.com/aditcahyono19/katalogmenu")
-      .then(function (response) {
-        console.log("berhasil : ",response);
-      })
-      .catch(function (error) {
-        console.log("gagal : ",error);
-      })
+      .then ((response) => this.setProduct(response.data))
+      .catch((error) => this.setProduct(error))
   },
 };
 </script>
