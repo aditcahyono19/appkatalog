@@ -51,7 +51,7 @@ export default {
   },
   mounted() {
     axios
-    this.axios.post('http://https://my-json-server.typicode.com/aditcahyono19/katalogmenu', this.data, {
+    .get('http://https://my-json-server.typicode.com/aditcahyono19/katalogmenu', this.data, {
    headers: {
           "Access-Control-Allow-Origin": "*",
           "Access-Control-Allow-Methods": "GET, POST, PATCH, PUT, DELETE, OPTIONS",
