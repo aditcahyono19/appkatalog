@@ -20,7 +20,6 @@
           <CardProducts />
         </div>
       </div>
-
     </div>
   </div>
 </template>
@@ -30,6 +29,7 @@
 import Navbar from "@/components/Navbar.vue";
 import Hero from "@/components/Hero.vue";
 import CardProducts from "@/components/CardProducts.vue";
+import axios from "axios";
 
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
@@ -38,6 +38,26 @@ export default {
     Navbar,
     Hero,
     CardProducts,
+  },
+  data() {
+    return {
+      products: [],
+    };
+  },
+  methods: {
+    setProduct(data) {
+      this.products = data;
+    },
+  },
+  mounted() {
+    axios
+      .get("https://github.com/aditcahyono19/katalogmenu/main/db.json")
+      .then(function (response) {
+        console.log("berhasil : ",response);
+      })
+      .catch(function (error) {
+        console.log("gagal : ",error);
+      })
   },
 };
 </script>
