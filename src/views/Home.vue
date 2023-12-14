@@ -16,7 +16,7 @@
       </div>
 
       <div class="row mb-3">
-        <div class="col-md-3 mt-4" v-for="product in products" :key="product.id">
+        <div class="col-md mt-4" v-for="product in products" :key="product.id">
           <CardProducts product="products"/>
         </div>
       </div>
@@ -51,15 +51,9 @@ export default {
   },
   mounted() {
     axios
-    this.axios.get('http://https://my-json-server.typicode.com/aditcahyono19/katalogmenu', this.data, {
-   headers: {
-          "Access-Control-Allow-Origin": "*",
-          "Access-Control-Allow-Methods": "GET, POST, PATCH, PUT, DELETE, OPTIONS",
-          "Access-Control-Allow-Headers": "Origin, Content-Type, X-Auth-Token"
-        }
+      .get("https://my-json-server.typicode.com/aditcahyono19/katalogmenu")
       .then ((response) => this.setProduct(response.data))
       .catch((error) => this.setProduct(error))
-    })
   },
 };
 </script>
