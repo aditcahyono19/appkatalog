@@ -16,8 +16,8 @@
       </div>
 
       <div class="row mb-3">
-        <div class="col-md mt-4">
-          <CardProducts />
+        <div class="col-md mt-4" v-for="product in products" :key="product.id">
+          <CardProducts product="products"/>
         </div>
       </div>
     </div>
