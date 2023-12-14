@@ -51,7 +51,7 @@ export default {
   },
   mounted() {
     axios
-      .get("https://github.com/aditcahyono19/katalogmenu/main/db.json")
+      .get("https://my-json-server.typicode.com/aditcahyono19/katalogmenu")
       .then(function (response) {
         console.log("berhasil : ",response);
       })
