@@ -51,7 +51,7 @@ export default {
   },
   mounted() {
     axios
-      .get("https://restaurant-api.dicoding.dev")
+      .get("https://my-json-server.typicode.com/aditcahyono19/katalogmenu")
       .then(function (response) {
         console.log("berhasil : ",response);
       })
