@@ -15,9 +15,9 @@
         </div>
       </div>
 
-      <div class="row mb-3">
-        <div class="col-md mt-4" v-for="product in products" :key="product.id">
-          <CardProducts product="products"/>
+      <div class="row mb-4">
+        <div class="col-md-4 mt-4" v-for="product in products" :key="product.id">
+          <CardProducts :product="product"/>
         </div>
       </div>
     </div>
@@ -51,9 +51,9 @@ export default {
   },
   mounted() {
     axios
-      .get("https://my-json-server.typicode.com/aditcahyono19/katalogmenu")
-      .then ((response) => this.setProduct(response.data))
-      .catch((error) => this.setProduct(error))
+    .get("http://localhost:3000/best-products")
+    .then((response)=> this.setProduct(response.data))
+    .catch((error)=>console.log(error))
   },
 };
 </script>

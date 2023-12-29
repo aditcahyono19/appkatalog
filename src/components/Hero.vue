@@ -11,7 +11,7 @@
               </h2>
               <p>Ayo segera pilih dan pesan makanan favorit anda</p>
               <router-link class="btn btn-lg btn-success" to="/menu"
-                >Menu</router-link
+                ><b-icon-arrow-right></b-icon-arrow-right> Pesan </router-link
               >
             </div>
           </div>

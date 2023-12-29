@@ -1,49 +1,12 @@
 <template>
-  <h2>Card Product {{ product.nama }}</h2>
-  <!-- <div class="container">
-  <div>
-    <b-card-group deck>
-  <b-card 
-    title="Ayam Penyet"
-    img-src="../assets/images/ayam-penyet.jpg"
-    img-alt="Image"
-    img-top
-    tag="article"
-    style="max-width: 20rem;"
-    class="mb-2">
-    <template #footer>
-        <small class="text-muted">Rp. 16.000</small>
-      </template>
-  </b-card>
-
-  <b-card
-    title="Tempe Penyet"
-    img-src="../assets/images/tempe-penyet.jpg"
-    img-alt="Image"
-    img-top
-    tag="article"
-    style="max-width: 20rem;"
-    class="mb-2">
-    <template #footer>
-        <small class="text-muted">Rp. 10.000</small>
-      </template>
-  </b-card>
-
-  <b-card
-    title="Lele Penyet"
-    img-src="../assets/images/lele-penyet.jpg"
-    img-alt="Image"
-    img-top
-    tag="article"
-    style="max-width: 20rem;"
-    class="mb-2">
-    <template #footer>
-        <small class="text-muted">Rp. 13.000</small>
-      </template>
-  </b-card>
-</b-card-group>
+<div class="card shadow">
+  <img :src="'assets/images/' + product.gambar" class="card-img-top" alt="..."/>
+  <div class="card-body">
+    <h5 class="card-title">{{ product.nama }}</h5>
+    <p class="card-text">Harga : Rp. {{ product.harga }}</p>
+    <a href="#" class="btn btn-success"><b-icon-cart></b-icon-cart> Pesan </a>
+  </div>
 </div>
-</div> -->
 </template>
 
 <script>
