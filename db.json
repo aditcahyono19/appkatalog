@@ -49,6 +49,14 @@
       "harga": 16000,
       "is_ready": true,
       "gambar" : "lele-penyet.jpg"
+    },
+    {
+      "id": 4,
+      "kode":"k-04",
+      "nama": "Dadar Penyet",
+      "harga": 10000,
+      "is_ready": true,
+      "gambar" : "dadar-penyet.jpg"
     }
   ],
   "keranjangs" : [ ],
