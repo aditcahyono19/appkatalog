@@ -84,16 +84,19 @@ export default {
       this.product = data;
     },
     pemesanan() {
-      this.pesan.products = this.product;
+ if(this.pesan.jumlah_pemesanan){
+  this.pesan.products = this.product;
       axios
         .post(
-          "https://my-json-server.typicode.com/aditcahyono19/katalogmenu/keranjangs",
+          "http://localhost:3000/keranjangs",
           this.pesan
         )
         .then(() => {
           console.log("Berhasil");
+          this.$router.push({path: "/keranjang"})
         })
         .catch((err) => console.log(err));
+ }
     },
   },
   mounted() {
