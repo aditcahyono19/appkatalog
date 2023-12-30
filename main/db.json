@@ -51,6 +51,6 @@
       "gambar" : "lele-penyet.jpg"
     }
   ],
-  "keranjangs" : [],
-  "pesanans": []
+  "keranjangs" : [ ],
+  "pesanans": [ ]
 }
