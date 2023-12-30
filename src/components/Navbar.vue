@@ -7,7 +7,7 @@
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
         <li class="nav-item">
-            <router-link class="nav-link" to="/home">Home</router-link>
+            <router-link class="nav-link" to="/">Home</router-link>
         </li>
         <li class="nav-item">
             <router-link class="nav-link" to="/menu">Menu</router-link>
